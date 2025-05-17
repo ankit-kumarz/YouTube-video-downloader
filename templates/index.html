@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body { background: #181818; color: #fff; }
+        .container { max-width: 700px; margin-top: 40px; }
+        .card { background: #232323; border: none; }
+        .form-control, .btn { border-radius: 0.5rem; }
+        .quality-table th, .quality-table td { color: #fff; }
+        .quality-table tr { background: #232323; }
+        .quality-table tr.selected { background: #0d6efd; color: #fff; }
+        .video-thumb { border-radius: 0.5rem; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="mb-4 text-center">YouTube Video Downloader</h1>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <form method="POST" action="/" class="mb-4">
+        <div class="input-group">
+            <input type="text" class="form-control" name="url" placeholder="Paste YouTube URL here..." value="{{ url or '' }}" required>
+            <button class="btn btn-primary" type="submit">Fetch</button>
+        </div>
+    </form>
+    {% if info %}
+    <div class="card mb-4 p-3">
+        <div class="row g-3 align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="{{ info.thumbnail }}" alt="Thumbnail" class="img-fluid video-thumb mb-2">
+            </div>
+            <div class="col-md-8">
+                <h4>{{ info.title }}</h4>
+                <p class="mb-1"><strong>Uploader:</strong> {{ info.uploader }}</p>
+                <p class="mb-1"><strong>Views:</strong> {{ "{:,}".format(info.view_count) }}</p>
+                <p class="mb-1"><strong>Duration:</strong> {{ info.duration // 60 }}m {{ info.duration % 60 }}s</p>
+            </div>
+        </div>
+    </div>
+    <form method="POST" action="/download">
+        <input type="hidden" name="url" value="{{ url }}">
+        <div class="card p-3 mb-3">
+            <h5>Select Quality:</h5>
+            <div class="table-responsive">
+                <table class="table table-hover quality-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Resolution</th>
+                            <th>Format</th>
+                            <th>Filesize</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for f in formats %}
+                        <tr>
+                            <td>
+                                <input type="radio" name="format_id" value="{{ f.format_id }}" {% if loop.first %}checked{% endif %} required>
+                            </td>
+                            <td>
+                                {{ f.height if f.height else '' }}{% if f.height %}p{% endif %} 
+                                <span class="badge bg-secondary">{{ f.label }}</span>
+                            </td>
+                            <td>{{ f.ext }}</td>
+                            <td>
+                                {% if f.filesize %}
+                                    {{ (f.filesize // 1048576) }} MB
+                                {% else %}
+                                    ?
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn btn-success mt-2" type="submit">Download Selected Quality</button>
+        </div>
+    </form>
+    {% endif %}
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
