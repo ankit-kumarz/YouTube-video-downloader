@@ -38,6 +38,23 @@ A modern and user-friendly YouTube video downloader with a beautiful dark-themed
 4. Wait for the download to complete
 5. Find your downloaded video in the 'downloads' folder
 
+
+## 🤝 **Contributions & Feedback**  
+Open to suggestions! Feel free to **fork, star, and contribute**! 
+
+🔗 **GitHub Repository:** [https://github.com/ankit-kumarz/YouTube-video-downloader]
+
+**Contact**
+
+For any questions or feedback, feel free to contact:
+
+Author: Ankit kumar
+
+Email: ankitrajj1068@gmail.com
+
+GitHub: ankit-kumarz
+
+
 ## Note
 
 This application is for personal use only. Please respect YouTube's terms of service and copyright laws when downloading videos. 
