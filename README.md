@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # YouTube Video Downloader
 
 A modern and user-friendly YouTube video downloader with a beautiful dark-themed UI.
