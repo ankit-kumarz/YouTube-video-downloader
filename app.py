@@ -4,7 +4,7 @@ import os
 import io
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Needed for flash messages
+app.secret_key = 'your_secret_key' 
 
 def get_video_info(url):
     ydl_opts = {'quiet': True, 'skip_download': True}
