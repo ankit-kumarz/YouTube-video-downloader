@@ -8,7 +8,7 @@ import yt_dlp
 
 class YouTubeDownloader: 
     def __init__(self):
-        # Set up the main window
+        # Set up the main window 
         self.window = ctk.CTk()
         self.window.title("YouTube Video Downloader")
         self.window.geometry("800x600")
