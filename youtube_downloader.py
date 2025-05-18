@@ -115,7 +115,7 @@ class YouTubeDownloader:
 
     def download_video(self, url):
         try:
-            # Get video info first
+        
             with yt_dlp.YoutubeDL({'quiet': True}) as ydl:
                 info = ydl.extract_info(url, download=False)
             self.title_info.configure(text=f"Title: {info.get('title', 'N/A')}")
