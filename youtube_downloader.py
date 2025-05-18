@@ -151,7 +151,7 @@ class YouTubeDownloader:
         self.status_label.configure(text="Starting download...")
         self.progress_bar.set(0)
         
-        # Start download in a separate thread
+        # Start download in a separate thread 
         thread = threading.Thread(target=self.download_video, args=(url,))
         thread.daemon = True
         thread.start()
