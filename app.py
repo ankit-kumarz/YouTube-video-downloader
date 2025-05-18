@@ -51,7 +51,7 @@ def download():
         'outtmpl': 'downloads/%(title)s.%(ext)s',
         'quiet': True,
     }
-    try:
+    try: 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(url)
             filename = ydl.prepare_filename(info)
