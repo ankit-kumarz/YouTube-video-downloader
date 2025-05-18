@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 import threading
 import yt_dlp
 
-class YouTubeDownloader:
+class YouTubeDownloader: 
     def __init__(self):
         # Set up the main window
         self.window = ctk.CTk()
