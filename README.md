@@ -11,7 +11,7 @@ A modern and user-friendly YouTube video downloader with a beautiful dark-themed
 - Downloads are saved in a dedicated 'downloads' folder
 - Multi-threaded downloading to prevent UI freezing
 
-## Requirements
+## Requirements:
 
 - Python 3.7 or higher
 - Required packages (install using `pip install -r requirements.txt`):
