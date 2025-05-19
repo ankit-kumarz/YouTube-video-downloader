@@ -12,7 +12,7 @@ def get_video_info(url):
         info = ydl.extract_info(url, download=False)
     return info
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST']) 
 def index():
     if request.method == 'POST':
         url = request.form.get('url')
