@@ -40,7 +40,7 @@ A modern and user-friendly YouTube video downloader with a beautiful dark-themed
 
 
 ## 🤝 **Contributions & Feedback**  
-Open to suggestions! Feel free to **fork, star, and contribute**! 
+Open to suggestions! Feel free to **fork, star, and contribute**!
 
 🔗 **GitHub Repository:** [https://github.com/ankit-kumarz/YouTube-video-downloader]
 
