@@ -23,7 +23,7 @@ A modern and user-friendly YouTube video downloader with a beautiful dark-themed
 1. Clone this repository or download the files
 2. Install the required packages:
    ```
-   pip install -r requirements.txt
+   pip install -r requirements.txt 
    ```
 
 ## Usage 
