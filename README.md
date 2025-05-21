@@ -35,7 +35,7 @@ A modern and user-friendly YouTube video downloader with a beautiful dark-themed
 2. Paste a YouTube video URL in the input field
 3. Click the "Download" button
 4. Wait for the download to complete 
-5. Find your downloaded video in the 'downloads' folder 
+5. Find your downloaded video in the 'downloads' folder
 
 
 ## 🤝 **Contributions & Feedback**  
