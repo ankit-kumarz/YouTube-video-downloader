@@ -28,7 +28,7 @@ A modern and user-friendly YouTube video downloader with a beautiful dark-themed
 
 ## Usage 
 
-1. Run the application:
+1. Run the application
    ```
    python youtube_downloader.py
    ```
