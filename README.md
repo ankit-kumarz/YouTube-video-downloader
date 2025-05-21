@@ -8,7 +8,7 @@ A modern and user-friendly YouTube video downloader with a beautiful dark-themed
 - Real-time download progress
 - Video information display (title, author, views)
 - Downloads are saved in a dedicated 'downloads' folder
-- Multi-threaded downloading to prevent UI freezing
+- Multi-threaded downloading to prevent UI freezing 
 
 ## Requirements:
 
