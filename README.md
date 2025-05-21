@@ -26,7 +26,7 @@ A modern and user-friendly YouTube video downloader with a beautiful dark-themed
    pip install -r requirements.txt
    ```
 
-## Usage
+## Usage 
 
 1. Run the application:
    ```
