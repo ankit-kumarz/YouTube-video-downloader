@@ -12,7 +12,7 @@ A modern and user-friendly YouTube video downloader with a beautiful dark-themed
 
 ## Requirements:
 
-- Python 3.7 or higher  
+- Python 3.7 or higher
 - Required packages (install using `pip install -r requirements.txt`):
   - pytube
   - customtkinter
