@@ -51,7 +51,7 @@ Author: Ankit kumar
 
 Email: ankitrajj1068@gmail.com
 
-GitHub:https://github.com/ankit-kumarz/
+GitHub: [https://github.com/ankit-kumarz/]
 
 
 ## Note 
