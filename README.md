@@ -56,7 +56,6 @@ GitHub: [https://github.com/ankit-kumarz/]
 
 ## Note 
 
-This application is for personal use only. Please respect YouTube's terms of service and copyright laws when downloading videos. 
-=======
+
 
 
