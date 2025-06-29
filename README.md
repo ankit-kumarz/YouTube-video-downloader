@@ -4,7 +4,7 @@ A modern and user-friendly YouTube video downloader with a beautiful dark-themed
 
 ## Features: 
 - Modern dark-themed UI using CustomTkinter
-- Download YouTube videos in highest available resolution
+- Download YouTube videos in highest available resolution 
 - Real-time download progress
 - Video information display (title, author, views)
 - Downloads are saved in a dedicated 'downloads' folder
